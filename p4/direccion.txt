@@ -1,0 +1,27 @@
+
+memSize = 2KB  0x07FF
+
+dirInicial	
+ 0x7000		
+dirEspejo
+0x5000 
+
+dirFinal = dirInicial + memSize
+	 = 0x7000 + 0x07FF = 0x77FF
+
+a15 a14 a13 a12 a11    a10...a0
+ 0   1   1   1   0      0 ... 0
+ 0   1   0   1   0      0 ... 0
+------------------------------
+
+_CS = [a15'*a14*a12*a11']'
+
+
+Agregar un decodificador a el circuito.
+Los pines de ARDUINO (A15'*A14*A12*A11') van a el deco, negando las
+   direcciones corespondientes y la salida del deco.
+La salida del deco va hacia el CS de la RAM.
+La demás circuiteria se deja intacta.
+El deco debe habilitar la direccion generada por la ecuacion de /CS.
+
+todoos los saltos condicionados son cortos

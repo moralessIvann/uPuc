@@ -1,0 +1,9 @@
+Evidenciar la funcionalidad de la práctica mediante un video donde se prueba lo siguiente:
+Secuencia de prueba:
+
+
+Iniciar la prueba con solo AD3 desconectado. Debiera marcar error en el Bus de Datos en la linea 3.
+Reconectar AD3 y desconectar A3 (después del Latch). Debiera marcar error en Bus de Direcciones en la linea 3.
+Reconectar A3 y desconectar A10. De igual formar que el anterior debería indicar el error en la linea 10.
+Reconectar A10 y desconectar VCC de la SRAM. Debería indicar Fallo Catastrófico.
+Reconectar VCC y volver a ejecutar la prueba. Esta vez deberla indicar un funcionamiento Exitoso.
