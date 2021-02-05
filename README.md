@@ -1,1 +1,1 @@
-# uPuc- Prácticas de la mteria de microcontroladores y microprocesadores 
+# uPuc- Prácticas de la materia de microcontroladores y microprocesadores 
